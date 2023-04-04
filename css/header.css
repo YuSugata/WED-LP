@@ -1,0 +1,101 @@
+header {
+  font-size: 1.4rem;
+  line-height: 24px;
+  width: 100vw;
+  justify-content: space-between;
+  padding-left: 90px;
+}
+header nav {
+  padding: 25px 0 25px 90px;
+  width: 80%;
+}
+header nav ul {
+  align-items: center;
+  gap: 30px;
+}
+
+header .logo {
+  max-width: 100px;
+}
+header .button {
+  min-width: 200px;
+  text-align: center;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 1.2rem;
+}
+header .button:hover {
+  opacity: 0.8;
+}
+
+.list-box {
+  position: relative;
+}
+
+.list-el {
+  position: absolute;
+  top: 30px;
+  background-color: #757575;
+  padding: 10px;
+  display: none;
+}
+
+header nav .list-el li:hover {
+  color: #000000;
+}
+
+header nav .list-box li:hover {
+  opacity: 0.8;
+}
+
+header nav .list-box li:hover .list-el {
+  display: block;
+}
+
+.list-el a li {
+  color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column;
+    padding: 16px;
+  }
+  header .button {
+    display: none;
+  }
+  header nav {
+    padding-left: 0;
+  }
+
+  footer {
+    padding-left: 16px;
+  }
+  .footWrap {
+    display: block;
+  }
+
+  .footText {
+    margin-top: 10px;
+  }
+}
+
+footer {
+  max-width: 1000px;
+  margin: 40px auto 26px auto;
+}
+footer .footWrap {
+  justify-content: space-between;
+  margin-bottom: 26px;
+  font-size: 1.4rem;
+  line-height: 21px;
+}
+footer .footWrap .footLogo {
+  width: 100px;
+}
+footer p {
+  font-size: 1.2rem;
+}
